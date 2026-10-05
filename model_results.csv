@@ -1,0 +1,21 @@
+Target,FeatureSet,Model,MAE,RMSE,R2,CV_R2,CV_R2_std
+FutureEnrollments,launch,Linear Regression,8.0908,10.662,-1.4954,-1.2004,0.2723
+FutureEnrollments,launch,Ridge,6.0477,8.1264,-0.4496,-0.4166,0.0978
+FutureEnrollments,launch,Lasso,6.3172,8.766,-0.6868,-0.5939,0.0977
+FutureEnrollments,launch,Random Forest,5.4919,7.6295,-0.2778,-0.4044,0.1026
+FutureEnrollments,launch,Gradient Boosting,7.4543,8.9691,-0.7659,-0.9622,0.5679
+FutureEnrollments,full,Linear Regression,8.8356,12.2199,-2.2779,-1.3258,0.3979
+FutureEnrollments,full,Ridge,6.2585,8.534,-0.5987,-0.4505,0.1069
+FutureEnrollments,full,Lasso,6.858,9.573,-1.0117,-0.6418,0.1638
+FutureEnrollments,full,Random Forest,6.3224,8.1465,-0.4568,-0.4513,0.0306
+FutureEnrollments,full,Gradient Boosting,9.3278,10.797,-1.559,-0.9657,0.3955
+FutureRevenue,launch,Linear Regression,826.1542,1256.3637,0.9783,0.9458,0.0447
+FutureRevenue,launch,Ridge,1426.5492,1960.1745,0.9473,0.8513,0.2151
+FutureRevenue,launch,Lasso,824.3422,1255.2009,0.9784,0.9463,0.0438
+FutureRevenue,launch,Random Forest,908.5301,1752.546,0.9578,0.9677,0.0111
+FutureRevenue,launch,Gradient Boosting,929.8417,1617.0975,0.9641,0.9612,0.0163
+FutureRevenue,full,Linear Regression,814.1067,1222.5726,0.9795,0.9382,0.0568
+FutureRevenue,full,Ridge,1474.9105,1987.8484,0.9458,0.8489,0.2168
+FutureRevenue,full,Lasso,811.8385,1220.5155,0.9795,0.9388,0.0559
+FutureRevenue,full,Random Forest,972.5041,1791.664,0.9559,0.9705,0.0114
+FutureRevenue,full,Gradient Boosting,771.1821,1292.4461,0.9771,0.9675,0.0156

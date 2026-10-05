@@ -1,0 +1,144 @@
+{
+  "bands": {
+    "price": [
+      0.0,
+      43.21333333333326
+    ],
+    "duration": [
+      16.60333333333333,
+      39.01666666666666
+    ],
+    "rating": [
+      2.536666666666666,
+      3.7766666666666664
+    ]
+  },
+  "cutoff": "2025-09-12",
+  "horizon_days": 109,
+  "date_min": "2025-01-01",
+  "date_max": "2025-12-30",
+  "featuresets": {
+    "launch": {
+      "num": [
+        "CoursePrice",
+        "CourseDuration",
+        "CourseRating",
+        "LevelEnc"
+      ],
+      "cat": [
+        "CourseCategory",
+        "CourseType",
+        "PriceBand",
+        "DurationBucket",
+        "RatingTier",
+        "ExperienceBucket"
+      ]
+    },
+    "full": {
+      "num": [
+        "CoursePrice",
+        "CourseDuration",
+        "CourseRating",
+        "LevelEnc",
+        "PastEnrollments"
+      ],
+      "cat": [
+        "CourseCategory",
+        "CourseType",
+        "PriceBand",
+        "DurationBucket",
+        "RatingTier",
+        "ExperienceBucket"
+      ]
+    }
+  },
+  "best_models": {
+    "FutureEnrollments|launch": "Random Forest",
+    "FutureEnrollments|full": "Ridge",
+    "FutureRevenue|launch": "Random Forest",
+    "FutureRevenue|full": "Random Forest"
+  },
+  "dropped": {
+    "launch": [
+      "YearsOfExperience",
+      "TeacherRating",
+      "ExpertiseMatch"
+    ],
+    "full": [
+      "YearsOfExperience",
+      "TeacherRating",
+      "ExpertiseMatch",
+      "PastAvgMonthlyRevenue",
+      "PastRevenue",
+      "RevenuePerEnrollment"
+    ]
+  },
+  "quality": {
+    "raw_transactions": 10000,
+    "raw_courses": 60,
+    "clean_transactions": 10000,
+    "clean_courses": 60,
+    "missing_values": {
+      "CoursePrice": 0,
+      "CourseDuration": 0,
+      "CourseRating": 0,
+      "YearsOfExperience": 60,
+      "TeacherRating": 60
+    }
+  },
+  "options": {
+    "CourseCategory": [
+      "Artificial Intelligence",
+      "Business",
+      "Cybersecurity",
+      "Data Science",
+      "Design",
+      "Digital Marketing",
+      "Finance",
+      "Machine Learning",
+      "Marketing",
+      "Programming",
+      "Project Management",
+      "Web Development"
+    ],
+    "CourseType": [
+      "Free",
+      "Paid"
+    ],
+    "CourseLevel": [
+      "Advanced",
+      "Beginner",
+      "Intermediate"
+    ],
+    "Expertise": [
+      "Unknown"
+    ]
+  },
+  "ranges": {
+    "CoursePrice": [
+      0.0,
+      490.9,
+      0.0
+    ],
+    "CourseDuration": [
+      1.2,
+      49.73,
+      28.505
+    ],
+    "CourseRating": [
+      1.13,
+      4.94,
+      3.065
+    ],
+    "YearsOfExperience": [
+      0.0,
+      1.0,
+      0.5
+    ],
+    "TeacherRating": [
+      0.0,
+      1.0,
+      0.5
+    ]
+  }
+}
