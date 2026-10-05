@@ -15,7 +15,7 @@ import streamlit as st
 from features import engineer
 
 st.set_page_config(page_title="EduPro Predictive Intelligence", page_icon="🎓", layout="wide")
-ART = Path("artifacts")
+ART = Path(".")
 if not (ART / "meta.json").exists():
     st.error("⚠️ No trained artifacts found. Run `python train_model.py` first.")
     st.stop()
